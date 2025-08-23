@@ -240,12 +240,12 @@ export const RegistrationForm = () => {
           <div className="mx-auto px-2 sm:px-4 py-2 sm:py-3">
             <div className="flex justify-center items-center">
               <div className="flex items-center space-x-1 sm:space-x-3 md:space-x-4">
-                <div className="w-10 h-10 sm:w-14 sm:h-14 md:w-20 md:h-20 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
-                  <div className="w-10 h-10 sm:w-14 sm:h-14 md:w-20 md:h-20 mx-auto rounded-full flex items-center justify-center">
+                <div className="w-14 h-14 sm:w-14 sm:h-14 md:w-20 md:h-20 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                  <div className="w-14 h-14 sm:w-14 sm:h-14 md:w-20 md:h-20 mx-auto rounded-full flex items-center justify-center">
                     <img
                       src="/Logo.png"
                       alt="Logo"
-                      className="w-10 h-10 sm:w-14 sm:h-14 md:w-20 md:h-20 object-contain"
+                      className="w-14 h-14 sm:w-14 sm:h-14 md:w-20 md:h-20 object-contain"
                     />
                   </div>
                 </div>
