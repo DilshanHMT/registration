@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root {
+    /* Festival-inspired vibrant theme */
+    --background: 245 100% 99%;
+    --foreground: 235 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 235 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 235 25% 15%;
+
+    /* Vibrant festival primary colors */
+    /* --primary: 270 100% 65%; */
+    --primary: 190 100% 43%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 285 100% 75%;
+
+    /* Teal secondary */
+    --secondary: 180 100% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Soft muted tones */
+    --muted: 240 20% 96%;
+    --muted-foreground: 235 15% 55%;
+
+    /* Pink accent */
+    --accent: 320 100% 65%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 20% 90%;
+    --input: 240 20% 96%;
+    /* --ring: 270 100% 65%; */
+
+    /* Festival gradients */
+    /* --gradient-festival: linear-gradient(135deg, hsl(270 100% 65%), hsl(320 100% 65%), hsl(180 100% 45%)); */
+    --gradient-festival: linear-gradient(105deg,rgba(0, 180, 217, 1) 0%, rgba(61, 95, 172, 1) 44%, rgba(200, 55, 148, 1) 75%, rgba(37, 25, 55, 1) 98%);
+    --gradient-subtle: linear-gradient(180deg, hsl(245 100% 99%), hsl(240 20% 98%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100% / 0.8), hsl(240 20% 99% / 0.9));
+
+    /* Vibrant shadows */
+    --shadow-festival: 0 20px 60px -15px hsl(270 100% 65% / 0.3);
+    /* --shadow-glow: 0 0 40px hsl(285 100% 75% / 0.4); */
+    --shadow-glow: 0 0 40px hsla(240, 1%, 72%, 0.4);
+    --shadow-card: 0 10px 30px -10px hsl(235 25% 15% / 0.1);
+
+    /* Smooth transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark festival theme */
+    --background: 235 25% 8%;
+    --foreground: 240 20% 95%;
+
+    --card: 235 25% 10%;
+    --card-foreground: 240 20% 95%;
+
+    --popover: 235 25% 10%;
+    --popover-foreground: 240 20% 95%;
+
+    --primary: 285 100% 75%;
+    --primary-foreground: 235 25% 8%;
+    --primary-glow: 300 100% 80%;
+
+    --secondary: 180 80% 40%;
+    --secondary-foreground: 240 20% 95%;
+
+    --muted: 235 20% 15%;
+    --muted-foreground: 240 15% 65%;
+
+    --accent: 320 90% 70%;
+    --accent-foreground: 235 25% 8%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 240 20% 95%;
+
+    --border: 235 20% 20%;
+    --input: 235 20% 15%;
+    --ring: 285 100% 75%;
+
+    --gradient-festival: linear-gradient(135deg, hsl(285 100% 75%), hsl(320 90% 70%), hsl(180 80% 40%));
+    --gradient-subtle: linear-gradient(180deg, hsl(235 25% 8%), hsl(235 20% 12%));
+    --gradient-card: linear-gradient(145deg, hsl(235 25% 12% / 0.8), hsl(235 20% 15% / 0.9));
+
+    --shadow-festival: 0 20px 60px -15px hsl(285 100% 75% / 0.2);
+    --shadow-glow: 0 0 40px hsl(300 100% 80% / 0.3);
+    --shadow-card: 0 10px 30px -10px hsl(0 0% 0% / 0.3);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
