@@ -237,42 +237,38 @@ export const RegistrationForm = () => {
       >
         {/* Header */}
         <div className="bg-white shadow-glow">
-          <div className="mx-auto px-4 py-2">
+          <div className="mx-auto px-2 sm:px-4 py-2 sm:py-3">
             <div className="flex justify-center items-center">
-              <div className="flex items-center space-x-3">
-                <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
-                  <div className="w-20 h-20 mx-auto rounded-full flex items-center justify-center">
+              <div className="flex items-center space-x-1 sm:space-x-3 md:space-x-4">
+                <div className="w-10 h-10 sm:w-14 sm:h-14 md:w-20 md:h-20 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                  <div className="w-10 h-10 sm:w-14 sm:h-14 md:w-20 md:h-20 mx-auto rounded-full flex items-center justify-center">
                     <img
                       src="/Logo.png"
                       alt="Logo"
-                      className="w-20 h-20 object-contain"
+                      className="w-10 h-10 sm:w-14 sm:h-14 md:w-20 md:h-20 object-contain"
                     />
                   </div>
                 </div>
-                <div>
-                  <h1 className="text-3xl font-bold bg-gradient-festival bg-clip-text text-transparent">
-                    {/* Hulhumale Culinary & Music Festival 2025 */}
-                    HULHUMALE CULINARY & MUSIC FESTIVAL 2025
+
+                {/* Title Section */}
+                <div className="text-center px-1 sm:px-2">
+                  <h1 className="text-xl sm:text-lg md:text-2xl lg:text-3xl font-bold bg-gradient-festival bg-clip-text text-transparent leading-tight">
+                    <span className="block sm:hidden">
+                      HULHUMALE CULINARY & 
+                      <br />
+                      MUSIC FESTIVAL 2025
+                    </span>
+                    <span className="hidden sm:block">
+                      HULHUMALE CULINARY & MUSIC FESTIVAL 2025
+                    </span>
                   </h1>
-                  {/* <p className="text-dark/40 text-sm font-semibold">
-                    Hulhumale Culinary & Music Festival 2025
-                  </p> */}
-                </div>
-                <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
-                  <div className="w-20 h-20 mx-auto rounded-full flex items-center justify-center">
-                    <img
-                      src="/Logo.png"
-                      alt="Logo"
-                      className="w-20 h-20 object-contain"
-                    />
-                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="container mx-auto px-4 py-8">
+        <div className="container mx-auto px-4">
           <div className="flex justify-center pt-5">
             <div className="w-full max-w-lg shadow-glow">
               {/* Registration Form */}
